@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="global.css">
+
+    <script defer src="https://kit.fontawesome.com/af3eb4fe70.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        
+        <div class="flex-title">
+            <div class="logo">
+                <img src="resources/cuLogoUAR.png" alt="Cu-logo" class="logo-image">
+            </div>
+            <div class="title">
+                <h3 class="title-text">KISII UNIVERSITY CHRISTIAN </h3>
+                <h3 class="title-text">UNION MAIN CAMPUS</h3>
+
+                <div class="nav-one--hidden">
+                    <div class="signUp-btn"><a href="" class="nav-link">Sign up</a></div>
+                    <div class="Login-btn"><a href="" class="nav-link">Log in</a></div>
+                    <div class="About-btn"><a href="" class="nav-link">About Us</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="nav-one">
+                <div class="signUp-btn">Sign up</div>
+                <div class="Login-btn">Log in</div>
+                <div class="About-btn">About Us</div>
+            </div>
+
+
+            <div class="row" id="hambuger">
+                <button class="nav-toggle__btn">
+                    <span class="hambuger"></span>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="main-quick--links">
+            <h3 class="main-quick--links---text">Quick Links</h3>
+            <ul class="quick-nav--links">
+                <li class="quick-item"><a href="#" class="quick-item--link">Win a Soul</a></li>
+                <hr>
+                <li class="quick-item"><a href="#" class="quick-item--link">Media</a></li>
+                <hr>
+                <li class="quick-item"><a href="#" class="quick-item--link">Constitution</a></li>
+                <hr>
+                <li class="quick-item"><a href="#" class="quick-item--link">Library</a></li>
+                <hr>
+                <li class="quick-item"><a href="#" class="quick-item--link">Financials</a></li>
+                <hr>
+            </ul>
+
+        </div>
+
+        <div class="intro-video--header">
+            <div class="video-intro">
+                <img src="resources/20230501_091418.jpg" alt="">
+            </div>
+            <div class="side-bar--links">
+                <h3 class="quick-links">Quick Links</h3>
+                <ul class="quick-nav--links">
+                    <li class="quick-item"><a href="#" class="quick-item--link">Win a Soul</a></li>
+                    <li class="quick-item"><a href="#" class="quick-item--link">Media</a></li>
+                    <li class="quick-item"><a href="#" class="quick-item--link">Constitution</a></li>
+                    <li class="quick-item"><a href="#" class="quick-item--link">Library</a></li>
+                    <li class="quick-item"><a href="#" class="quick-item--link">Financials</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <div class="main">
+
+      
+    </div>
+
+    <div class="footer">
+
+
+        <p class="footer--text">KISII UNIVERSITY MAIN CAMPUS CHRISTIAN UNION 2024</p>
+
+        <div class="hr"></div>
+
+        <div class="social--links">
+            <div class="youtube">
+                <a href="https://www.youtube.com/@KSUCU-MC" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class="facebook">
+                <a href="https://www.facebook.com/ksucumc" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+
+            <div class="tiktok">
+                <a href="" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const navBtn = document.querySelector(".nav-toggle__btn")
+
+        navBtn.addEventListener("click",()=>{
+            document.body.classList.toggle("nav-open")
+        })
+
+    </script>
+
+</body>
+
+
+</html>
+
+

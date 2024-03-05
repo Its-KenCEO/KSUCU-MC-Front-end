@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financials</title>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="financials.css">
+    <script defer src="https://kit.fontawesome.com/af3eb4fe70.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="flex-title">
+            <div class="logo">
+                <img src="resources/cuLogoUAR.png" alt="Cu-logo" class="logo-image">
+            </div>
+            <div class="title">
+                <h3 class="title-text">KISII UNIVERSITY CHRISTIAN </h3>
+                <h3 class="title-text">UNION MAIN CAMPUS</h3>
+
+                <div class="nav-one--hidden">
+                    <div class="signUp-btn"><a href="" class="nav-link">Home</a></div>
+                    <div class="Login-btn"><a href="" class="nav-link">Contact</a></div>
+                    <div class="About-btn"><a href="" class="nav-link">About Us</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="nav-one">
+                <div class="signUp-btn">Home</div>
+                <div class="Login-btn">Contact</div>
+                <div class="About-btn">About Us</div>
+            </div>
+
+        </div>
+
+
+    </header>
+
+
+    <main>
+
+        <h2 class="main-financial--title---text">KSUCU-MC FINANCIALS</h2>
+
+        <p class="finantial-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim praesentium ullam repellendus aperiam, quidem id modi commodi sint maiores eius earum quae libero impedit sit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, fugiat? Suscipit, minima. Dignissimos molestias minima eum nostrum voluptas quibusdam sit. Cumque obcaecati sit veniam enim.</p>
+
+        <form action="#" class="offerring">
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone">
+            </div>
+            <div>
+                <label for="amount">Amount</label>
+                <input type="text" id="amount">
+            </div>
+            <div>
+                <label for="category">Category</label>
+                <input type="text" id="category">
+            </div>
+        </form>
+
+        <div class="btn-submit">Pay</div>
+
+
+        <div class="record-flex">
+            <div class="payment-history">
+                <div class="payment-history--title">
+                    <p class="payment-history--text">myPayment History</p>
+                    <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+                    </svg>
+                </div>
+                <div class="payment-history--record records">
+                    <p>11th Feb 2024 - Ksh5,000</p>
+                    <p>11th Feb 2024 - Ksh5,000</p>
+                    <p>11th Feb 2024 - Ksh5,000</p>
+                    <p>11th Feb 2024 - Ksh5,000</p>
+                </div>
+            </div>
+            <div class="financial-statements">
+                <div class="financial-statement--title">
+                    <p class="financial-statement--text">financial statements</p>
+                    <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+                    </svg>
+                </div>
+                <div class="financial-statement--record records">
+                    <p>financial year 2021 - 2022</p>
+                    <p>financial year 2022 - 2023</p>
+                    <p>financial year 2024 - 2024</p>
+                    <p>financial year 2025 - 2026</p>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+
+    <div class="footer">
+
+
+        <p class="footer--text">KISII UNIVERSITY MAIN CAMPUS CHRISTIAN UNION 2024</p>
+
+        <div class="hr"></div>
+
+        <div class="social--links">
+            <div class="youtube">
+                <a href="https://www.youtube.com/@KSUCU-MC" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class="facebook">
+                <a href="https://www.facebook.com/ksucumc" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+
+            <div class="tiktok">
+                <a href="" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const dropdownIcons = document.querySelectorAll('.dropdown-icon')
+
+        dropdownIcons.forEach((icon)=> {
+            icon.addEventListener('click', function() {
+                this.classList.toggle('rotate');
+
+                let submenu = this.parentNode.parentNode.querySelector('.records')
+                console.log(submenu);
+                if (submenu) {
+                submenu.classList.toggle('active');
+                }
+            });
+        });
+
+        
+    </script>
+
+</body>
+
+</html>
